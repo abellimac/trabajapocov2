@@ -75,10 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'damadb',
+	'hostname' => '10.0.0.201',
+	'username' => 'userdb',
+	'password' => '12345678',
+	'database' => 'general_tpoco_db',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -95,12 +95,11 @@ $db['default'] = array(
 	'save_queries' => TRUE
 );
 
-$db['suscripcion'] = array(
-	'dsn'	   => '',
-	'hostname' => 'localhost',
-	'username' => 'root',
-	'password' => '',
-	'database' => 'suscription_db',
+$db['suscription'] = array(
+	'hostname' => '10.0.0.201',
+	'username' => 'userdb',
+	'password' => '12345678',
+	'database' => 'general_tpoco_db1',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
@@ -108,11 +107,5 @@ $db['suscripcion'] = array(
 	'cache_on' => FALSE,
 	'cachedir' => '',
 	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt'  => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
+	'dbcollat' => 'utf8_general_ci'
 );

@@ -5,6 +5,7 @@ body, html {
 	font-family: 'Raleway', sans-serif;
 	text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
+	font-family: 'arial';
 }
 
 @media (min-width: 1200px){
@@ -342,6 +343,7 @@ h1.domain_name {
     font-weight: bolder;
     padding: 0.6em;
 	color: aliceblue;
+	font-family: 'Raleway', sans-serif;
 }
 
 
@@ -445,7 +447,7 @@ h4.subtitle {
 .social-clasic .icon-mail {background: #666666;}
 
 .contein-information {
-	margin-left: 30px; 
+	/*margin-left: 30px; */
 }
 
 .contein-information div {
@@ -455,6 +457,49 @@ h4.subtitle {
 .main-container-iframe.suscribete {
 	width: 300px;
 }
+
+.button-ver-mas a {
+	background-color: blue;
+	display: inline-block;
+	color: #fff;
+	margin: 12px 6px;
+	border-radius: 5px;
+	padding: 8px;
+}
+
+.main-container-iframe.suscribete form{
+	margin: 0 10px;
+}
+
+.form-control {
+    border: 1px solid #000;
+}
+
+.button-suscribete {
+	background: blue;
+	border: 2px solid red;
+	padding: 5px 20px;
+	color: white;
+	border-radius: 5px;
+	/*font-family: arial;*/
+}
+
+.form-control:focus {
+    border-color: #ff0000;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+#message_suscription {
+	text-align: center;
+	margin-top: 14px;
+	color: green;
+	font-weight: bold;
+}
+
+
+
 
 @media (max-width: 768px ) {
 	.main-container-iframe {
@@ -468,5 +513,11 @@ h4.subtitle {
 	}
 	h1.domain_name {
 		font-size: 21px;
+	}
+	.font20 {
+		font-size: 18px;
+	}
+	.main-container-iframe.suscribete {
+		width: 100%;
 	}
 }

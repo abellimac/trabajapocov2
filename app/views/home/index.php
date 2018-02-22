@@ -18,26 +18,6 @@
 </div>
 
 <div class="container mg-t1e2">
-	<h4 class="subtitle">Registrate para que pueda enviarte Tips</h4>
-</div>
-
-<div class="main-container-iframe suscribete" style="margin-bottom: 2em;">
-	<form>
-		<div class="form-group">
-			<label for="exampleInputEmail1">Correo electronico</label>
-			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingresa tu correo Electronico">
-		</div>
-		<div class="form-group">
-			<label for="exampleInputEmail1">Nombre</label>
-			<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingresa tu nombre">
-		</div>
-		<div class="text-center">
-			<button type="submit" style="margin: 0;font-size: 20px;" class="btn btn-success">Suscribete</button>
-		</div>
-	</form>
-</div>
-
-<div class="container mg-t1e2">
 	<h4 class="subtitle">Como montar un Negocio en Internet</h4>
 </div>
 
@@ -59,16 +39,51 @@
 
 		<div>Yo te puede enseñar todo lo que aprendí y como poner en práctica todo lo aprendido, por ejemplo como crear una pagina web sencilla como esta que estas viendo, o cómo hacer pagos por internet si no sabes como hacerlo, debajo tengo mas videos de lo que aprendí en el proceso de vivir de internet que te pueden ayudar.</div>
 	</div>
-	<button class="center-block" style="margin-top:3em;margin-bottom:3em">
+<!-- 	<button class="center-block" style="margin-top:3em;margin-bottom:3em">
 		<a 	class="btn btn-primary" 
 			style="font-size: 22px; font-weight: 700;" 
 			target="_blank" href="http://ofertas777.com/2990/17120">VER MAS DETALLES SOBRE EL CURSO + BONOS</a>
-	</button>
+	</button> -->
+	<div class="button-ver-mas">
+		<button class="center-block" style="margin-top:3em;margin-bottom:3em">
+			<a 	target="_blank" 
+				style="font-size: 22px; font-weight: 700;" 
+				href="http://ofertas777.com/2990/17120">VER MAS DETALLES SOBRE EL CURSO + REGALOS</a>
+		</button>
+	</div>
+</div>
+
+<div class="container mg-t1e2">
+	<h4 class="subtitle">Registrate para que pueda enviarte Tips</h4>
+</div>
+
+<div class="main-container-iframe suscribete" style="margin-bottom: 2em;">
+	<form id="form_suscription">
+		<input type="hidden" id="campaign" name="campaign" value="1">
+		<div class="form-group">
+			<label for="email">Correo electronico</label>
+			<input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu correo Electronico">
+		</div>
+		<div class="form-group">
+			<label for="name">Nombre</label>
+			<input type="text" class="form-control" id="name" name="name" placeholder="Ingresa solo tu nombre">
+		</div>
+		<div class="text-center">
+			<input style="margin: 0;font-size: 20px;" 
+					onclick="save_suscription();"
+					type="button" 
+					value="Suscribete" 
+					class="button-suscribete">
+		</div>
+	</form>
+	<div id="message_suscription" style="display: none;">
+		gracias por suscribirse
+	</div>
 </div>
 
 <div class="container">
-	<h4 class="subtitle">Aqui tengo otros Videos para que puedan ayudarte en este proceso.</h4>
-	<div>
+	<h4 class="subtitle">Aqui tengo otros Videos para que puedan ayudarte en este proceso</h4>
+	<div class="ul-container">
 		<ul>
 			<li>
 				<a href="#" class="font20">Como crear una pagina web sencilla como esta?</a>

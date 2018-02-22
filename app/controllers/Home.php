@@ -13,7 +13,7 @@ class Home extends CI_Controller
 		$this->load->view( 'header' );
 		$this->load->view( 'includes/menu' );
 		$this->load->view( 'home/index' );
-		// $this->load->view( 'footer' );
+		$this->load->view( 'footer' );
 	}
 
 	public function email()
